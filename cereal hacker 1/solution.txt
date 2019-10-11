@@ -1,0 +1,13 @@
+i got the cookie by logging in as username guest password guest
+decoded the cookie twice with url decoder
+then I decoded what I got from the url decoder into the base64 deoder
+got this username and password thing
+then I changed the username to admin
+and password to ' or''='
+then I encoded that in the base64 once
+then encoded that to url encoder twice
+put that into the cookie
+set file to admin
+and refreshed the page
+and got the flag
+
