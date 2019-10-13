@@ -1,0 +1,1 @@
+' || (select group_concat(secret) from users) || '
