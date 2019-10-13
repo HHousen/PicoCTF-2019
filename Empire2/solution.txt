@@ -1,0 +1,1 @@
+decode flask session cookie at https://www.kirsle.net/wizards/flask-session.cgi
