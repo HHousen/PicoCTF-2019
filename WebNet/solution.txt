@@ -1,0 +1,3 @@
+for WebNet0 open in wireshark and go to Edit > Preferences > Protocols > TLS > RSA keys list and add the key to the list (don't worry about ip and other columns)
+
+for WebNet1 do the same thing (make sure to use the right key and remove key for WebNet0) and key is in JPEG JFIF Reassembled SSL

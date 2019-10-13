@@ -1,0 +1,3 @@
+decode rsa certificate at https://8gwifi.org/PemParserFunctions.jsp or https://www.sslchecker.com/certdecoder
+then factor using yafu...
+and you've got the two primes and you're done
