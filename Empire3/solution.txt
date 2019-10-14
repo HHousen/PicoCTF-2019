@@ -1,3 +1,0 @@
-get flask session cookie
-get flask SECRET_KEY config variable used for encoding session cookies by adding a todo with text {{config}}
-use provided script to solve

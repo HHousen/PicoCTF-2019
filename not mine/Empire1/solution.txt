@@ -1,2 +1,0 @@
-add a todo:
-'||(select group_concat(secret) from user)||'
