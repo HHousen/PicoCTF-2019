@@ -1,4 +1,8 @@
 from Crypto.Util.number import long_to_bytes
+import math
+BLOCK_SIZE = 16
+UMAX = int(math.pow(256, BLOCK_SIZE))
+
 f = open("body.enc.ppm", "rb")
 h1 = f.readline()
 h2 = f.readline()
@@ -12,9 +16,9 @@ while True:
     xs.append(data)
 ys = []
 for i in range(1, len(xs)):
-    y = xs[i] - xs[i - 1]
-    if y < 0:
-        y += int(pow(256, 16))
+    y = (xs[i] - xs[i - 1]) % UMAX
+    # if y < 0:
+    #     y += int(pow(256, 16))
     y = long_to_bytes(y)
     # while len(y) % 16 != 0:
     #     y = b"\0" + y
