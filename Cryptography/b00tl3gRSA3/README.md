@@ -19,4 +19,4 @@ e: 65537
 
 ### Flag
 
-`picoCTF{too_many_fact0rs_6566973}picoCTF{example}`
+`picoCTF{too_many_fact0rs_6566973}`
