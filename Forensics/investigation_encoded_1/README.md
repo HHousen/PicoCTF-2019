@@ -198,7 +198,7 @@
 
     Since `remain` is global, both `encode()` and `save()` know about it. However many bytes are required to get to the next bit are appended as 0 (hence the `save(0)`). This ensures that the output is padded to the nearest byte and can be flushed correctly.
 
-8. Get `matrix` and `secret` using `radare2`:
+8. Get `matrix` and `secret` using `radare2` ([pc docs](https://r2wiki.readthedocs.io/en/latest/options/p/pc-p/)):
 
     ```
     [0x000007c0]> bf obj.secret
