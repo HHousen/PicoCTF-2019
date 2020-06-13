@@ -18,7 +18,7 @@
     ```
 
 4. Since something happened lets see if the files are any different by re-extracting the test directory from the zip file and comparing it to the contents of the current test directory: `diff -r test/ test_original/`. Nothing appears to have changed. Lets reset the `test` directory and delete the "new" folder in case it actually changed something.
-5. Reverse the binary file using [Ghidra](https://ghidra-sre.org/) ([cheat sheet](https://ghidra-sre.org/CheatSheet.html)). Open it and in the symbol tree click on main. The decompiled main function will show on the right.
+5. Reverse the binary file using [Ghidra](https://ghidra-sre.org/) ([cheat sheet](https://ghidra-sre.org/CheatSheet.html)). Open it and in the symbol tree click on main. The decompiled main function will show on the left.
 
     ```c++
     int __cdecl _main(int _Argc,char **_Argv,char **_Env)
