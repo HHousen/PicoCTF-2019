@@ -69,6 +69,20 @@
     c_int(-721750240)
     ```
 
+
+## Solution2
+
+1. To simplify the solution we can utilize a feature of gdb known as user-defined command hooks (https://sourceware.org/gdb/current/onlinedocs/gdb.html/Hooks.html#Hooks). Hooks in gdb enable us to automatically execute certain commands in response to other commands. In particular, gdb provides us with the pseudo-command `stop` which corresponds to any break in program execution. If we want to print the value of `eax` before the call to `doNothing` we can define a hook like so
+
+   ```
+      define hook-stop \
+      printf "picoCTF{%d}\n", $eax \
+      c \
+      end
+   ```
+This will print the value of `eax` right before the call to `doNothing` then continue program execution. Before we run the program we still need to run `set follow-fork-mode child` as mentioned and set a breakpoint on the call to `doNothing` with `b *main+125`. 
+
+
 ### Flag
 
 `picoCTF{-721750240}`
